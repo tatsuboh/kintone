@@ -4,13 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint 'src/**/*.{js,ts,tsx}'",
-    "format": "prettier --write 'src/**/*.{js,ts,tsx}'",
-    "format:check": "prettier --check 'src/**/*.{js,ts,tsx}'",
-    "type-check": "tsc --noEmit",
     "test": "jest",
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
   },
   "keywords": [],
   "author": "",
